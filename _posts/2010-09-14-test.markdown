@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Test"
+date:   2010-09-14
+image: /images/profile.jpg
+categories: research
+course: ""
+author: "me"
+subtitle: "subtitle test"
+---
+Test content
