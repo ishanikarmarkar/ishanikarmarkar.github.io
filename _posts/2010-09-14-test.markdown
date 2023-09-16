@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Test"
-date:   2010-09-14
-image: /images/profile.jpg
+date:   2022-09-14
+image: images/profile.jpg
 categories: research
 course: ""
 author: "me"
