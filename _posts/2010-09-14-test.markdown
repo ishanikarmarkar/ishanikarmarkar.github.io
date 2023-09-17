@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Towards Optimal Effective Resistance Estimation"
-date:   2022-09-14
 image: images/profile.jpg
 categories: research
 course: ""
