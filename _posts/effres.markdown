@@ -6,7 +6,7 @@ date: 2023-06-24
 categories: research
 course: ""  
 venue: "In submission"
-author: "with Rajat Dwarknath and Aaron Sidford"
+author: "Rajat Dwarknath, Ishani Karmarkar, and Aaron Sidford"
 subtitle:
 ---
 Computing the effective resistance of nodes in a network (or, undirected graph) is a fundamental task with many applications, for instance, in graph machine learning, graph data analysis, and the design of efficient graph algorithms. In this project we new efficient algorithms for estimating effective resistances in

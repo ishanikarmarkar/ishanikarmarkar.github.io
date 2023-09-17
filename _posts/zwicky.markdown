@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Real-bogus classification for the Zwicky Transient Facility using deep learning"
+image: images/zwicky.png
+date: 2019-06-24
+categories: research
+course: ""  
+venue: "Royal Astronomical Society"
+author: "Dmitry A Duev, Ashish Mahabal, Frank J Masci, Matthew J Graham, Ben Rusholme, Richard Walters, Ishani Karmarkar, Sara Frederick, Mansi M Kasliwal, Umaa Rebbapragada, and Charlotte Ward"
+subtitle:
+---
+In this project, we present a convolutional neural network classifier for classifying real versus bogus data in astronomical images from the Zwicky Transients Facility (ZTF), a new robotic time-domain survey. (<a href="https://arxiv.org/abs/1907.11259">arxiv</a>)
