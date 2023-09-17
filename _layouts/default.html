@@ -15,6 +15,7 @@
 
 </head>
 
+
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
@@ -46,36 +47,40 @@
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                To be updated soon :)
-              </p>
+                <tr>
+                  <td style="padding:2.5%;width:100%;vertical-align:middle">
+                    <h2>Research</h2>
+                    <p>
+                      To be updated soon :)
+                    </p>
 
-              {% for post in site.posts %}
-              {% for cat in post.categories %}
-              {% if cat == 'research' %}
-              <tr>
-                <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                  <img src="/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-                </td>
-                <td style="padding:2.5%;width:75%;vertical-align:middle">
-                  <h3>{{post.title}}</h3>
-                  <br>
-                  {{post.authors}}
-                  <br>
-                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-                  <br>
-                  {% if post.arxiv %}
-                  <a href="{{post.arxiv}}">arxiv</a> /
-                  {% endif %}
-                  <!-- ... Rest of the content for the post ... -->
-                </td>
-              </tr>
-              {% endif %}
-              {% endfor %}
-              {% endfor %}
+                    {% for post in site.posts %}
+                    {% for cat in post.categories %}
+                    {% if cat == 'research' %}
+                    <tr>
+                      <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+                        <img src="/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+                      </td>
+                      <td style="padding:2.5%;width:75%;vertical-align:middle">
+                        <h3>{{post.title}}</h3>
+                        <br>
+                        {{post.authors}}
+                        <br>
+                        <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                        <br>
+                        {% if post.arxiv %}
+                        <a href="{{post.arxiv}}">arxiv</a> /
+                        {% endif %}
+                        <!-- ... Rest of the content for the post ... -->
+                      </td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                  </td>
+                </tr>
+              </table>
+
 
               <h2>Internships</h2>
               <p>
@@ -94,7 +99,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'teaching' %}
+          {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
