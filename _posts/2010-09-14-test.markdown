@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Towards Optimal Effective Resistance Estimation"
-date:   
-image:
+date:   2022-09-14
+image: images/profile.jpg
 categories: research
 course: ""
-author: ""
-subtitle: "https://arxiv.org/abs/2306.14820"
+author: "me"
+subtitle: "subtitle test"
 ---
 Computing the effective resistance of nodes in a network (or, undirected graph) is a fundamental task with many applications in the analysis of networks, graph machine learning, and the design of efficient graph algorithms. In this project
 we present faster algorithms for estimating effective resistances on
