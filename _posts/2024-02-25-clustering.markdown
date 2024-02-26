@@ -6,7 +6,7 @@ date: 2023-06-24
 categories: research
 course: ""  
 venue: "in submission"
-authors: "Vaggos Chatziafratis, Ishani Karmarkar, and Ellen Vitercik"
+authors: "Vaggos Chatziafratis, Ishani Karmarkar, and Ellen Vitercik (alphabetical)"
 subtitle:
 ---
 Clustering is a fundamental problem in machine learning. There are a
