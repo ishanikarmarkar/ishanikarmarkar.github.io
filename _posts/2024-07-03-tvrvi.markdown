@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Truncated Variance-Reduced Value Iteration"
+image: images/mdp_example.png
+date: 2024-06-02
+categories: research
+course: ""  
+venue: "arxiv preprint"
+authors: "Yujia Jin, Ishani Karmarkar, Aaron Sidford, and Jiayi Wang (alphabetical)"
+subtitle:
+---
+We study the problem of solving a discounted MDP with a generative model, a fundamental and extensively studied reinforcement learning setting. We present a new randomized variant of value iteration that improves the runtime for computing a coarse optimal solution. Importantly, our method is model-free and takes a step towards improving the sample efficiency gap between model-based and model-free methods in this setting. (<a href="https://arxiv.org/abs/2405.12952">arxiv</a>)
