@@ -6,7 +6,7 @@ date: 2023-06-24
 categories: research
 course: ""  
 venue: "Neural Information Processing Systems (NeurIPS)"
-authors: "Rajat Dwaraknath, Ishani Karmarkar, and Aaron Sidford (alphabetical)"
+authors: "Rajat Dwaraknath, Ishani Karmarkar, and Aaron Sidford"
 subtitle:
 ---
 Computing the effective resistance of nodes in a network (or, undirected graph) is a fundamental task with many applications, for instance, in graph machine learning, graph data analysis, and the design of efficient graph algorithms. In this paper we introduce new efficient algorithms for estimating effective resistances in well-connected graphs. We also prove improved time lower bounds for effective resistance estimation. In addition, we provide natural extensions
