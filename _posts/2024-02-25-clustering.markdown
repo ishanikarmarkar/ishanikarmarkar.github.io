@@ -5,7 +5,7 @@ image: images/sizegen.png
 date: 2023-06-24
 categories: research
 course: ""  
-venue: "in submission"
+venue: "arxiv preprint"
 authors: "Vaggos Chatziafratis, Ishani Karmarkar, and Ellen Vitercik (alphabetical)"
 subtitle:
 ---
