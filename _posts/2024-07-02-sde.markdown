@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Faster Spectral Density Estimation and Sparsification in the Nuclear Norm"
+image: images/generic_graph_pic.png
+date: 2023-07-02
+categories: research
+course: ""  
+venue: "Conference on Learning Theory (COLT) 2024"
+authors: "Yujia Jin, Ishani Karmarkar, Christopher Musco, Aaron Sidford, and Apoorv Vikram Singh (alphabetical)"
+subtitle:
+---
+Spectral Density Estimation (SDE) is the problem of efficiently learning the distribution of eigenvalues of a graph and has broad applications in computational science and network science. In this paper, we present new fast and simple randomized and deterministic algorithms for spectral density estimation via a new notion of graph sparsification, which we call nuclear sparsification. (<a href="https://arxiv.org/abs/2406.07521">arxiv</a>)

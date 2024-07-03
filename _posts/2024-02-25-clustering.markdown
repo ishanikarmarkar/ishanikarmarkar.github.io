@@ -13,7 +13,7 @@ Clustering is a fundamental problem in machine learning. There are a
 variety of clustering algorithms in the literature; however, there is
 scant guidance on choosing a good clustering algorithm for a dataset
 at hand. In this paper we approach the problem of clustering
-algorithm selection using a semi-supervised framework. We present
+algorithm selection. We present
 algorithms that use a small subset of the data to provably estimate the
 performance of three classic clustering algorithms: k-means++, k-centers, and
 single linkage hierarchical clustering on the full dataset. We support
