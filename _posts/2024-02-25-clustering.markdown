@@ -2,7 +2,7 @@
 layout: post
 title:  "From Large to Small Datasets: Size Generalization for Clustering Algorithm Selection"
 image: images/sizegen.png
-date: 2023-06-24
+date: 2024-07-24
 categories: research
 course: ""  
 venue: "arxiv preprint"

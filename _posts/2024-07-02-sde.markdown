@@ -2,10 +2,10 @@
 layout: post
 title:  "Faster Spectral Density Estimation and Sparsification in the Nuclear Norm"
 image: images/generic_graph_pic.png
-date: 2023-07-02
+date: 2024-06-02
 categories: research
 course: ""  
-venue: "Conference on Learning Theory (COLT) 2024"
+venue: "Conference on Learning Theory (COLT)"
 authors: "Yujia Jin, Ishani Karmarkar, Christopher Musco, Aaron Sidford, and Apoorv Vikram Singh (alphabetical)"
 subtitle:
 ---
