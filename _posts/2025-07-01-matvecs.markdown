@@ -9,6 +9,6 @@ venue: "Foundations of Computer Science (FOCS)"
 authors: "Ishani Karmarkar, Liam O'Caroll, and Aaron Sidford"
 subtitle:
 ---
-We study the fundamental problem of computing an approximate Nash equilibrium of a two-player zero-sum game given access to only a small number of matrix-vector products. We provide the first algorithm that provably converges to an $\epsilon$-approximate Nash equilibrium in $\tilde{O}(\epsilon^{-8/9})$ matrix-vector products, which is the first improvement on this problem since Nemerovski's and Nesterov's algorithms two decades ago. Our techniques also yield improved rates for other applications, such as the problem of computing a high-margin SVM (linear classifier) and certain generalizations for linear regression. (<a href="https://arxiv.org/abs/2509.04426">arxiv</a>)
+We study the fundamental problem of computing an approximate Nash equilibrium of a two-player zero-sum game given access to only a small number of matrix-vector products. We provide the first algorithm that provably converges to an $\epsilon$-approximate Nash equilibrium in $\tilde{O}(\epsilon^{-8/9})$ matrix-vector products, which is the first improvement on this problem since Nemerovski's and Nesterov's algorithms two decades ago. Our techniques also yield improved rates for other applications, such as the problem of computing a hard-margin SVM (linear classifier) and certain generalizations for linear regression. (<a href="https://arxiv.org/abs/2509.04426">arxiv</a>)
 
 
