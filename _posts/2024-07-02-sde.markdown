@@ -5,7 +5,7 @@ image: images/generic_graph_pic.png
 date: 2024-06-02
 categories: research
 course: ""  
-venue: "Conference on Learning Theory (COLT)"
+venue: "Conference on Learning Theory (COLT) "
 authors: "Yujia Jin, Ishani Karmarkar, Christopher Musco, Aaron Sidford, and Apoorv Vikram Singh"
 subtitle:
 ---

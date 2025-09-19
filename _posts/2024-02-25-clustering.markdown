@@ -1,21 +1,12 @@
 ---
 layout: post
-title:  "From Large to Small Datasets: Size Generalization for Clustering Algorithm Selection"
+title:  "Accelerating data-driven algorithm selection for combinatorial partitioning problems"
 image: images/sizegen.png
-date: 2024-07-2
+date: 2025-09-18
 categories: research
 course: ""  
-venue: "arxiv preprint"
-authors: "Vaggos Chatziafratis, Ishani Karmarkar, and Ellen Vitercik"
+venue: "NeurIPS 2025 Spotlight (top 3% of all submissions)"
+authors: "Vaggos Chatziafratis, Ishani Karmarkar, Yingxi Li, and Ellen Vitercik"
 subtitle:
 ---
-Clustering is a fundamental problem in machine learning. There are a
-variety of clustering algorithms in the literature; however, there is
-scant guidance on choosing a good clustering algorithm for a dataset
-at hand. In this paper we approach the problem of clustering
-algorithm selection. We present
-algorithms that use a small subset of the data to provably estimate the
-performance of three classic clustering algorithms: k-means++, k-centers, and
-single linkage hierarchical clustering on the full dataset. We support
-our theoretical results with experiments on several real-world clustering
-instances. (<a href="https://arxiv.org/abs/2402.14332">arxiv</a>)
+Data-driven algorithm selection is an approach for choosing effective heuristics for computational problems. It operates by evaluating a set of candidate algorithms on a collection of representative training instances and selecting the one with the best empirical performance. However, running each algorithm on every training instance is computationally expensive, making scalability a central challenge. A practical workaround is to evaluate algorithms on smaller proxy instances derived from the original inputs. We provide the first theoretical foundations for this practice by formalizing the notion of size generalization: predicting an algorithm's performance on a large instance by evaluating it on a smaller, representative instance, subsampled from the original instance. We provide size generalization guarantees for several clustering algorithms and max-cut algorithms.

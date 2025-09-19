@@ -12,7 +12,29 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+  <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
 
+  <!-- MathJax (LaTeX support) -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$","$"],["\\(","\\)"]],
+        displayMath: [["$$","$$"],["\\[","\\]"]],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
@@ -25,11 +47,10 @@
               <h1>
                 Ishani Karmarkar
               </h1>
-              <p>I am currently a PhD student at Stanford University. My research primarily focuses on the design and analysis of algorithms for problems arising in graph theory, machine learning, and optimization.
-                 I am advised by <a href="https://www.aaronsidford.com/">Aaron Sidford</a> and <a href="https://vitercik.github.io/">Ellen Vitercik</a>.
+              <p>I am currently a PhD student at Stanford University. My research primarily focuses on problems at the intersection of optimization, and machine learning, and algorithm design. I am very fortunate to be advised by <a href="https://www.aaronsidford.com/">Aaron Sidford</a> and <a href="https://vitercik.github.io/">Ellen Vitercik</a>.
               </p>
               <p>
-                Previously, I earned a BS in Applied and Computational Mathematics with a Minor in Computer Science from the California Institute of Technology (Caltech), where I did undergraduate research with Bamdad Hosseini and Andrew Stuart. I also had the opportunity to work as an intern at Facebook (now Meta), where I worked on a variety of machine learning projects.
+                Previously, I earned a BS in Applied and Computational Mathematics with a Minor in Computer Science from the California Institute of Technology (Caltech), where I did undergraduate research with Bamdad Hosseini and Andrew Stuart. 
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="ishanik@stanford.edu"> Email</a> &nbsp;/&nbsp;
@@ -47,7 +68,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research Projects </h2>
+              <h2>Selected Publications </h2>
+              <p><em>Please note: in my field (theory) authors are always listed alphabetically! </em></p>
               <!-- <p>
                 To be updated soon :)
               </p> -->
@@ -113,18 +135,14 @@
 
         <h2>Internship Projects </h2>
         <p>
-          Webpage in progress, to be updated soon :)
+          I have previously done internships at Citadel (quantitative research), Meta Reality Labs (machine learning), and Facebook (software engineer). I'm currently interning at Annapurna Labs (a part of AWS).
         </p>
 
-        <h2>Other Projects </h2>
-        <p>
-            Webpage in progress, to be updated soon :)
-        </p>
 
         <h2>Teaching Experience </h2>
 
         <p>
-          Aside from research, I also enjoy teaching mathematics. At Stanford, I had the opportunity to serve as a teaching assistance for CME 302 (Numerical Linear Algebra) and ME 300 (Linear Algebra with Engineering Applications.)
+          Aside from research, I also enjoy teaching mathematics. At Stanford, I had the opportunity to serve as a teaching assistance for CS 264 (Beyond Worst Case Analysis of Algorithms), CME 302 (Numerical Linear Algebra), and ME 300 (Linear Algebra with Engineering Applications.)
           At Caltech, I enjoyed being a teaching assistant for CME 213 (Markov Chains, Discrete Stochastic Processes, and Applications), ACM 104 (Applied Linear Algebra), CS 157 (Statistical Inference), and ACM 95/100 (Introductory Methods of Applied Math).
         </p>
 

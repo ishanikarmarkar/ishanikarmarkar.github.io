@@ -5,7 +5,7 @@ image: images/effres.png
 date: 2023-06-24
 categories: research
 course: ""  
-venue: "Neural Information Processing Systems (NeurIPS)"
+venue: "NeurIPS"
 authors: "Rajat Dwaraknath, Ishani Karmarkar, and Aaron Sidford"
 subtitle:
 ---
