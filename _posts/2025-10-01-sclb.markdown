@@ -1,0 +1,12 @@
+<!-- ---
+layout: post
+title:  "Active Learning for Stochastic Contextual Linear Bandits"
+image: images/aclb.png
+date: 2025-09-18
+categories: research
+course: ""  
+venue: "In submission"
+authors: "Emma Brunskill, Ishani Karmarkar, and Zhaoqi Li"
+subtitle:
+---
+Prior algorithms for stochastic contextual banditys strategically sample actions but naively (passively) sampling contexts from the underlying context distribution. But in many practical scenarios---including online content recommendation, survey research, AI alignment, and clinical trials---practitioners can actively sample or recruit contexts based on prior knowledge of the contexts. Despite this potential for active learning, strategic context sampling in stochastic contextual bandits is underexplored. We propose an algorithm that learns a near-optimal policy by strategically sampling rewards of context-action pairs. We prove it enjoys improved instance-dependent guarantees and demonstrate empirically that our algorithm reduces the number of samples needed to learn a near-optimal policy. -->
