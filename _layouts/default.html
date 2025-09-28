@@ -101,7 +101,11 @@
               {{post.authors}}
 
               <br>
-              <em>{{ post.venue | replace: 'Spotlight', '<span class="spotlight-badge">Spotlight</span>' }}</em>, {{ post.date | date: "%Y" }}
+              <em>{{ post.venue
+                | replace: 'Spotlight', '<span class="spotlight-badge">Spotlight</span>'
+                | replace: 'Oral', '<span class="spotlight-badge">Oral</span>'
+                | replace: 'Best Paper', '<span class="spotlight-badge">Best Paper</span>'
+              }}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
