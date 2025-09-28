@@ -101,7 +101,7 @@
               {{post.authors}}
 
               <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <em>{{ post.venue | replace: 'Spotlight', '<span class="spotlight-badge">Spotlight</span>' }}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /

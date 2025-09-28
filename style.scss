@@ -99,6 +99,18 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* Red boxed badge for the word "Spotlight" in venue lines */
+.spotlight-badge {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 0 2px;
+  border: 2px solid #d00000;
+  border-radius: 4px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: inherit;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
