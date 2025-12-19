@@ -2,7 +2,7 @@
 layout: post
 title:  "Active Learning for Stochastic Contextual Linear Bandits"
 image: images/aclb.png
-date: 2025-09-18
+date: 2025-12-19
 categories: research
 course: ""  
 venue: "Preliminary version in NeurIPS Workshop on Aligning Reinforcement Learning Experimentalists and Theorists"
