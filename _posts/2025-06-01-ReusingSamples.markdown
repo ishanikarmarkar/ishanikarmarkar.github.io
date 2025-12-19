@@ -2,7 +2,7 @@
 layout: post
 title:  "Reusing Samples in Variance-Reduction"
 image: images/reuse-samples.png
-date: 2026-01-01
+date: 2025-12-18
 categories: research
 course: ""  
 venue: "Algorithmic Learning Theory (ALT)"
