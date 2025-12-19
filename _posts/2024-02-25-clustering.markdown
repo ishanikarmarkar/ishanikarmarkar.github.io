@@ -2,7 +2,7 @@
 layout: post
 title:  "Accelerating data-driven algorithm selection for combinatorial partitioning problems"
 image: images/sizegen.png
-date: 2025-09-18
+date: 2025-09-20
 categories: research
 course: ""  
 venue: "NeurIPS Spotlight (top 3% of all submissions)"
