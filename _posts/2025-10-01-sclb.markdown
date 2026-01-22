@@ -5,7 +5,7 @@ image: images/aclb.png
 date: 2026-01-03
 categories: research
 course: ""  
-venue: "Under Review |Preliminary version in NeurIPS Workshop on Aligning Reinforcement Learning Experimentalists and Theorists"
+venue: "AISTATS |Preliminary version in NeurIPS Workshop on Aligning Reinforcement Learning Experimentalists and Theorists"
 authors: "Emma Brunskill, Ishani Karmarkar, and Zhaoqi Li"
 subtitle:
 ---
