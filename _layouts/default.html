@@ -107,9 +107,10 @@
 
               <br>
               <em>{{ post.venue
-                | replace: 'Spotlight', '<span class="spotlight-badge">Spotlight</span>'
-                | replace: 'Oral', '<span class="spotlight-badge">Oral</span>'
-                | replace: 'Best Paper', '<span class="spotlight-badge">Best Paper</span>'
+                | replace: 'Spotlight', '<span style="color: red;">Spotlight</span>'
+                | replace: 'Oral', '<span style="color: red;">Oral</span>'
+                | replace: 'Best Paper', '<span style="color: red;">Best Paper</span>'
+                | replace: 'Most Elegant Paper Award', '<span style="color: red;">Most Elegant Paper Award</span>'
               }}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.arxiv %}

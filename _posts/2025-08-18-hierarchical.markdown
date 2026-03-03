@@ -5,7 +5,7 @@ image: images/star.png
 date: 2025-09-18
 categories: research
 course: ""  
-venue: "NeurIPS Spotlight (top 3% of all submissions) | Best Paper at AAAI Workshop on Multi-Agents in the Real World"
+venue: "NeurIPS <span style='color: red;'>Spotlight</span> (top 3% of all submissions) | <span style='color: red;'>Best Paper</span> at AAAI Workshop on Multi-Agents in the Real World"
 authors: "Emile Timothy Anand, Ishani Karmarkar, and Gunnan Qu"
 subtitle:
 ---

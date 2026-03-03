@@ -5,7 +5,7 @@ image: images/mdp_example.png
 date: 2024-06-03
 categories: research
 course: ""  
-venue: "NeurIPS | Oral presentation at COLT Workshop on Reinforcement Learning"
+venue: "NeurIPS | <span style='color: red;'>Oral</span> presentation at COLT Workshop on Reinforcement Learning"
 authors: "Yujia Jin, Ishani Karmarkar, Aaron Sidford, and Jiayi Wang"
 subtitle:
 ---

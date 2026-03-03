@@ -5,7 +5,7 @@ image: images/sizegen.png
 date: 2025-09-20
 categories: research
 course: ""  
-venue: "NeurIPS Spotlight (top 3% of all submissions)"
+venue: "NeurIPS <span style='color: red;'>Spotlight</span> (top 3% of all submissions)"
 authors: "Vaggos Chatziafratis, Ishani Karmarkar, Yingxi Li, and Ellen Vitercik"
 subtitle:
 ---
