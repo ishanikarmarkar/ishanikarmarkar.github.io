@@ -5,7 +5,7 @@ image: images/reuse-samples.png
 date: 2026-01-01
 categories: research
 course: ""  
-venue: "Algorithmic Learning Theory (ALT)"
+venue: "Algorithmic Learning Theory (ALT) | <span style='border: 2px solid red; padding: 2px 6px; border-radius: 4px;'>Most Elegant Paper Award</span>"
 authors: "Yujia Jin, Ishani Karmarkar, Aaron Sidford, and Jiayi Wang"
 subtitle:
 ---

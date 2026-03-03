@@ -5,7 +5,7 @@ image: images/aclb.png
 date: 2026-01-03
 categories: research
 course: ""  
-venue: "AISTATS |Preliminary version in NeurIPS Workshop on Aligning Reinforcement Learning Experimentalists and Theorists"
+venue: "AISTATS | NeurIPS Workshop on Aligning Reinforcement Learning Experimentalists and Theorists | <span style='border: 2px solid red; padding: 2px 6px; border-radius: 4px;'>Oral</span> at Stanford Causal Science Conference"
 authors: "Emma Brunskill, Ishani Karmarkar, and Zhaoqi Li"
 subtitle:
 ---
