@@ -1,3 +1,29 @@
 ---
 layout: default
+active_tab: publications
 ---
+
+<article class="paper-page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="pub-authors">{{ page.authors }}</p>
+  <p class="pub-venue">
+    <em>{{ page.venue }}</em><span class="year">, {{ page.date | date: "%Y" }}</span>
+  </p>
+  {% if page.arxiv or page.video or page.code or page.poster or page.slides or page.website or page.youtube %}
+  <p class="pub-links">
+    {% if page.arxiv %}<a href="{{ page.arxiv }}">arXiv</a>{% endif %}
+    {% if page.video %}{% if page.arxiv %} / {% endif %}<a href="{{ page.video }}">video</a>{% endif %}
+    {% if page.code %} / <a href="{{ page.code }}">code</a>{% endif %}
+    {% if page.poster %} / <a href="{{ page.poster }}">poster</a>{% endif %}
+    {% if page.slides %} / <a href="{{ page.slides }}">slides</a>{% endif %}
+    {% if page.website %} / <a href="{{ page.website }}">website</a>{% endif %}
+    {% if page.youtube %} / <a href="{{ page.youtube }}">youtube</a>{% endif %}
+  </p>
+  {% endif %}
+
+  <div class="paper-body">
+    {{ content }}
+  </div>
+
+  <p style="margin-top:2rem;"><a href="{{ site.baseurl }}/publications">&larr; All publications</a></p>
+</article>

@@ -1,117 +1,306 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+/* ============================================================
+   Fresh, modern academic theme — Ishani Karmarkar
+   ============================================================ */
 
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
+:root {
+  --ink:        #1a1a1a;
+  --muted:      #5f6368;
+  --faint:      #8a8f98;
+  --line:       #e6e8eb;
+  --bg:         #ffffff;
+  --bg-soft:    #f7f8fa;
+  --accent:     #1772d0;
+  --accent-2:   #f09228;
+  --maxw:       820px;
+}
 
-/**************/
-/* BASE RULES */
-/**************/
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 a {
-  color: #1772d0;
+  color: var(--accent);
   text-decoration: none;
+  transition: color .15s ease;
+}
+a:hover,
+a:focus { color: var(--accent-2); }
+
+p { margin: 0 0 1rem; }
+
+h1, h2, h3 {
+  color: var(--ink);
+  line-height: 1.25;
+  font-weight: 600;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+/* ---------------- Nav ---------------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--line);
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
+.nav-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
-}
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+.brand {
   font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+  font-size: 1.05rem;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.brand:hover { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 6px;
 }
 
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
+.nav-links a {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: .95rem;
+  padding: 7px 12px;
+  border-radius: 8px;
+  transition: background .15s ease, color .15s ease;
+}
+.nav-links a:hover { background: var(--bg-soft); color: var(--ink); }
+.nav-links a.active { color: var(--accent); background: rgba(23,114,208,.08); }
 
+/* ---------------- Layout ---------------- */
+.site-main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px 24px 24px;
+  min-height: calc(100vh - 60px - 80px);
 }
 
-.one {
-  width: 160px;
-  height: 160px;
+.page-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.5rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+}
+
+/* ---------------- Home ---------------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 40px;
+  align-items: start;
+}
+
+.hero-name {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+
+.hero-photo {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+.hero-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  font-size: .95rem;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .hero-photo-wrap {
+    order: -1;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .hero-name { text-align: center; }
+}
+
+/* ---------------- Publications ---------------- */
+.pub-note {
+  color: var(--muted);
+  font-size: .92rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.pub {
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+.pub:last-child { border-bottom: 1px solid var(--line); }
+
+.pub-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 0 0 .35rem;
+  line-height: 1.35;
+}
+
+.pub-authors { margin: 0 0 .15rem; }
+
+.pub-venue {
+  color: var(--muted);
+  margin: 0 0 .5rem;
+  font-size: .95rem;
+}
+.pub-venue .year { color: var(--faint); }
+
+.pub-links {
+  font-size: .9rem;
+  margin: 0 0 .6rem;
+}
+.pub-links a { font-weight: 500; }
+
+.pub-abstract {
+  color: var(--muted);
+  font-size: .94rem;
+  margin: 0;
+}
+
+/* Red highlight already embedded in venue strings */
+span[style*="color: red"],
+.highlight-red { color: #d00000 !important; font-weight: 600; }
+
+/* ---------------- Internships timeline ---------------- */
+.timeline {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0 0 0 8px;
   position: relative;
 }
-
-.two {
-  width: 160px;
-  height: 160px;
+.timeline::before {
+  content: "";
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--line);
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px;
+  padding: 0 0 26px 32px;
+  align-items: start;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--accent);
+  box-sizing: border-box;
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.timeline-year {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: .95rem;
+  padding-top: 2px;
+  white-space: nowrap;
 }
 
-/* Red boxed badge for the word "Spotlight" in venue lines */
-.spotlight-badge {
-  display: inline-block;
-  padding: 0 6px;
-  margin: 0 2px;
-  border: 2px solid #d00000;
-  border-radius: 4px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: inherit;
+.timeline-org {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 .2rem;
+}
+.timeline-role {
+  margin: 0;
+  color: var(--muted);
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+@media (max-width: 560px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
+/* ---------------- Fun ---------------- */
+.dog-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 1rem;
+}
+.dog-gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+}
+
+@media (max-width: 560px) {
+  .dog-gallery { grid-template-columns: 1fr; }
+  .dog-gallery img { height: auto; }
+}
+
+/* ---------------- Footer ---------------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+}
+.site-footer p {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--faint);
+  font-size: .85rem;
+  text-align: center;
+}
