@@ -1,0 +1,25 @@
+---
+layout: default
+active_tab: blog
+title: Blog
+permalink: /blog
+---
+
+<h1 class="page-title">Blog</h1>
+
+{% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'blog'" %}
+
+{% if blog_posts.size > 0 %}
+<ul class="blog-list">
+  {% for post in blog_posts %}
+  <li class="blog-entry">
+    <span class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="blog-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="coming-soon">
+  <p style="margin:0;">✍️ Posts coming soon!</p>
+</div>
+{% endif %}

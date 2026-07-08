@@ -291,6 +291,60 @@ span[style*="color: red"],
   .dog-gallery img { height: auto; }
 }
 
+/* ---------------- Blog ---------------- */
+.coming-soon {
+  background: var(--bg-soft);
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.blog-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+.blog-entry {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+}
+.blog-entry:last-child { border-bottom: 1px solid var(--line); }
+.blog-date {
+  color: var(--faint);
+  font-size: .9rem;
+  white-space: nowrap;
+}
+.blog-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.blog-post-date {
+  color: var(--faint);
+  font-size: .9rem;
+  margin-top: -0.5rem;
+}
+.blog-body {
+  margin-top: 1.5rem;
+  line-height: 1.75;
+}
+.blog-body h2 { font-size: 1.3rem; margin: 2rem 0 .8rem; }
+.blog-body h3 { font-size: 1.1rem; margin: 1.6rem 0 .6rem; }
+.blog-body img { max-width: 100%; border-radius: 10px; }
+
+@media (max-width: 560px) {
+  .blog-entry {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
 /* ---------------- Footer ---------------- */
 .site-footer {
   border-top: 1px solid var(--line);
